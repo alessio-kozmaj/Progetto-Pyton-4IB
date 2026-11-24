@@ -3,7 +3,7 @@ ui_corpo.py  -  IL CORPO CLICCABILE (interfaccia, parte A)
 
 VistaCorpo e' un Canvas che disegna i poligoni di regioni.py.
 Non conosce i dati (nomi, esercizi): quando succede qualcosa AVVISA chi l'ha
-creato tramite due "callback" (funzioni passate dal di fuori, come i delegate in C#):
+creato tramite due "callback" (funzioni passate dal di fuori):
     on_hover(id_gruppo)   - il mouse entra (id) o esce (None) da un muscolo
     on_click(id_gruppo)   - click su un muscolo
 """
