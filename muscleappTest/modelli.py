@@ -5,8 +5,6 @@ Qui descriviamo "che cosa esiste" nel programma, esattamente come faresti in C#:
 un esercizio, un gruppo muscolare, una riga della scheda di allenamento.
 Questo file NON sa nulla di grafica e NON legge file: contiene solo classi.
 
-REGOLA DI SQUADRA: questo file si modifica solo dopo esservi messi d'accordo,
-perche' lo usano tutti gli altri file.
 """
 
 

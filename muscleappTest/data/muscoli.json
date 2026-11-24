@@ -8,19 +8,19 @@
         "nome": "Panca piana",
         "descrizione": "Distesi su una panca, si spinge il bilanciere dal petto verso l'alto.",
         "tipo": "palestra",
-        "video_url": "https://www.youtube.com/results?search_query=Panca%20piana%20esecuzione%20corretta%20tutorial"
+        "video_url": "https://www.youtube.com/shorts/hWbUlkb5Ms4"
       },
       {
-        "nome": "Push-up (flessioni)",
+        "nome": "Push-up",
         "descrizione": "Corpo teso, si scende col petto verso terra e si risale spingendo.",
         "tipo": "calisthenics",
-        "video_url": "https://www.youtube.com/results?search_query=Push-up%20%28flessioni%29%20esecuzione%20corretta%20tutorial"
+        "video_url": "https://www.youtube.com/shorts/pKZ-lkKKMws"
       },
       {
-        "nome": "Croci con manubri",
-        "descrizione": "Su panca, si aprono e chiudono le braccia con i manubri per allungare il petto.",
+        "nome": "Incline Chest Press",
+        "descrizione": "Con un appoggio alla schiena, si spinge il macchinario verso avanti.",
         "tipo": "palestra",
-        "video_url": "https://www.youtube.com/results?search_query=Croci%20con%20manubri%20esecuzione%20corretta%20tutorial"
+        "video_url": "https://www.youtube.com/shorts/i3e4CG5tnfs"
       }
     ]
   },

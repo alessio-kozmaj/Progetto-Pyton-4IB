@@ -1,7 +1,3 @@
-"""
-main.py  -  PUNTO DI PARTENZA. Si avvia con:   python main.py
-(come il Main() di C#)
-"""
 import dati
 from app import App
 
