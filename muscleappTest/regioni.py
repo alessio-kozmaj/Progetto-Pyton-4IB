@@ -7,9 +7,6 @@ x cresce verso destra, y cresce verso il basso.
 Ogni muscolo e' un poligono = lista di punti (x, y).
 La chiave del dizionario (es. "pettorali") deve essere IDENTICA all'"id"
 scritto in data/muscoli.json: e' il "ponte" tra grafica e dati.
-
-QUANDO AVRETE UN'ILLUSTRAZIONE VERA: usate tools/trova_coordinate.py per
-leggere le coordinate dei punti e sostituite i poligoni qui sotto.
 """
 
 LARGHEZZA = 360
