@@ -33,19 +33,19 @@
         "nome": "Military press",
         "descrizione": "In piedi, si spinge il bilanciere o i manubri sopra la testa.",
         "tipo": "palestra",
-        "video_url": "https://www.youtube.com/results?search_query=Military%20press%20esecuzione%20corretta%20tutorial"
+        "video_url": "https://www.youtube.com/shorts/4LBVP2Oe7fg"
       },
       {
         "nome": "Alzate laterali",
         "descrizione": "Con manubri leggeri si alzano le braccia di lato fino all'altezza delle spalle.",
         "tipo": "palestra",
-        "video_url": "https://www.youtube.com/results?search_query=Alzate%20laterali%20esecuzione%20corretta%20tutorial"
+        "video_url": "https://www.youtube.com/shorts/Kl3LEzQ5Zqs"
       },
       {
         "nome": "Pike push-up",
         "descrizione": "Dalla posizione a V rovesciata si scende con la testa verso terra e si spinge.",
         "tipo": "calisthenics",
-        "video_url": "https://www.youtube.com/results?search_query=Pike%20push-up%20esecuzione%20corretta%20tutorial"
+        "video_url": "https://www.youtube.com/shorts/V6BtY3Lt0Ys"
       }
     ]
   },
@@ -58,19 +58,19 @@
         "nome": "Curl con bilanciere",
         "descrizione": "In piedi, si piegano i gomiti portando il bilanciere verso le spalle.",
         "tipo": "palestra",
-        "video_url": "https://www.youtube.com/results?search_query=Curl%20con%20bilanciere%20esecuzione%20corretta%20tutorial"
+        "video_url": "https://www.youtube.com/shorts/54x2WF1_Suc"
       },
       {
         "nome": "Curl a martello",
         "descrizione": "Con presa neutra si piegano i gomiti: lavora anche l'avambraccio.",
         "tipo": "palestra",
-        "video_url": "https://www.youtube.com/results?search_query=Curl%20a%20martello%20esecuzione%20corretta%20tutorial"
+        "video_url": "https://www.youtube.com/shorts/Z7gLnOCO89c"
       },
       {
         "nome": "Chin-up (trazioni supine)",
         "descrizione": "Alla sbarra con presa a palmi verso di te, si sale col mento sopra la sbarra.",
         "tipo": "calisthenics",
-        "video_url": "https://www.youtube.com/results?search_query=Chin-up%20%28trazioni%20supine%29%20esecuzione%20corretta%20tutorial"
+        "video_url": "https://www.youtube.com/shorts/Oi3bW9nQmGI"
       }
     ]
   },
@@ -83,19 +83,19 @@
         "nome": "Crunch",
         "descrizione": "Distesi, si solleva il busto accorciando la distanza tra costole e bacino.",
         "tipo": "calisthenics",
-        "video_url": "https://www.youtube.com/results?search_query=Crunch%20esecuzione%20corretta%20tutorial"
+        "video_url": "https://www.youtube.com/shorts/PkzgZxrf0Qs"
       },
       {
         "nome": "Plank",
         "descrizione": "In appoggio sugli avambracci, si mantiene il corpo dritto per tempo.",
         "tipo": "calisthenics",
-        "video_url": "https://www.youtube.com/results?search_query=Plank%20esecuzione%20corretta%20tutorial"
+        "video_url": "https://www.youtube.com/shorts/9ShnhdZpfjc"
       },
       {
         "nome": "Leg raise",
         "descrizione": "Appesi o distesi, si alzano le gambe tese controllando la discesa.",
         "tipo": "calisthenics",
-        "video_url": "https://www.youtube.com/results?search_query=Leg%20raise%20esecuzione%20corretta%20tutorial"
+        "video_url": "http://youtube.com/shorts/XQc0WHO90Lk"
       }
     ]
   },
@@ -108,19 +108,19 @@
         "nome": "Squat",
         "descrizione": "Si scende piegando anche e ginocchia e si risale spingendo coi piedi.",
         "tipo": "palestra",
-        "video_url": "https://www.youtube.com/results?search_query=Squat%20esecuzione%20corretta%20tutorial"
+        "video_url": "https://www.youtube.com/shorts/PPmvh7gBTi0"
       },
       {
         "nome": "Leg press",
         "descrizione": "Seduti alla pressa, si spinge la pedana con le gambe.",
         "tipo": "palestra",
-        "video_url": "https://www.youtube.com/results?search_query=Leg%20press%20esecuzione%20corretta%20tutorial"
+        "video_url": "https://www.youtube.com/shorts/nDh_BlnLCGc"
       },
       {
-        "nome": "Affondi",
-        "descrizione": "Un passo avanti, si scende col ginocchio posteriore verso terra e si risale.",
+        "nome": "Squat bulgaro",
+        "descrizione": "Appoggia il piedre dietro alla panca, tieni i pesi e scendi piegando la gamba poi spingi",
         "tipo": "calisthenics",
-        "video_url": "https://www.youtube.com/results?search_query=Affondi%20esecuzione%20corretta%20tutorial"
+        "video_url": "https://www.youtube.com/shorts/Cow3ESXmrTU"
       }
     ]
   },
@@ -133,19 +133,19 @@
         "nome": "Wrist curl",
         "descrizione": "Con avambracci appoggiati, si flette il polso con un manubrio.",
         "tipo": "palestra",
-        "video_url": "https://www.youtube.com/results?search_query=Wrist%20curl%20esecuzione%20corretta%20tutorial"
+        "video_url": "https://www.youtube.com/shorts/wSwo6mKHgZI"
       },
       {
-        "nome": "Farmer's walk",
+        "nome": "Farmer carry",
         "descrizione": "Si cammina tenendo due pesi pesanti, uno per mano.",
         "tipo": "palestra",
-        "video_url": "https://www.youtube.com/results?search_query=Farmer%27s%20walk%20esecuzione%20corretta%20tutorial"
+        "video_url": "https://www.youtube.com/shorts/Ozp9nI_w4xo"
       },
       {
         "nome": "Dead hang",
         "descrizione": "Appesi alla sbarra per più tempo possibile.",
         "tipo": "calisthenics",
-        "video_url": "https://www.youtube.com/results?search_query=Dead%20hang%20esecuzione%20corretta%20tutorial"
+        "video_url": "https://www.youtube.com/shorts/ye0atdeiXlU"
       }
     ]
   },
@@ -158,19 +158,19 @@
         "nome": "Shrug",
         "descrizione": "Con manubri o bilanciere si alzano le spalle verso le orecchie.",
         "tipo": "palestra",
-        "video_url": "https://www.youtube.com/results?search_query=Shrug%20esecuzione%20corretta%20tutorial"
+        "video_url": "Shrug esecuzione corretta tutorial"
       },
       {
         "nome": "Face pull",
         "descrizione": "Ai cavi, si tira la corda verso il viso aprendo i gomiti.",
         "tipo": "palestra",
-        "video_url": "https://www.youtube.com/results?search_query=Face%20pull%20esecuzione%20corretta%20tutorial"
+        "video_url": "https://www.youtube.com/shorts/IeOqdw9WI90"
       },
       {
         "nome": "Scapular pull-up",
         "descrizione": "Appesi alla sbarra, si alzano e abbassano solo le scapole.",
         "tipo": "calisthenics",
-        "video_url": "https://www.youtube.com/results?search_query=Scapular%20pull-up%20esecuzione%20corretta%20tutorial"
+        "video_url": "https://www.youtube.com/shorts/9M8ylnbriB0"
       }
     ]
   },
@@ -183,19 +183,19 @@
         "nome": "Trazioni alla sbarra",
         "descrizione": "Presa prona, si sale col mento sopra la sbarra.",
         "tipo": "calisthenics",
-        "video_url": "https://www.youtube.com/results?search_query=Trazioni%20alla%20sbarra%20esecuzione%20corretta%20tutorial"
+        "video_url": "https://www.youtube.com/shorts/ImU9MrpIrlY"
       },
       {
         "nome": "Lat machine",
         "descrizione": "Seduti, si tira la barra verso il petto.",
         "tipo": "palestra",
-        "video_url": "https://www.youtube.com/results?search_query=Lat%20machine%20esecuzione%20corretta%20tutorial"
+        "video_url": "https://www.youtube.com/shorts/bNmvKpJSWKM"
       },
       {
         "nome": "Rematore con manubrio",
         "descrizione": "Con un appoggio, si tira il manubrio verso il fianco.",
         "tipo": "palestra",
-        "video_url": "https://www.youtube.com/results?search_query=Rematore%20con%20manubrio%20esecuzione%20corretta%20tutorial"
+        "video_url": "https://www.youtube.com/shorts/WkFX6_GxAs8"
       }
     ]
   },
@@ -205,22 +205,22 @@
     "funzione": "Estendono il gomito: servono per spingere e stendere il braccio.",
     "esercizi": [
       {
-        "nome": "Dip alle parallele",
-        "descrizione": "Sulle parallele, si scende piegando i gomiti e si risale.",
+        "nome": "Diamond push-up",
+        "descrizione": "posiziona le mani a terra molto vicine ed esegui un piegamento",
         "tipo": "calisthenics",
-        "video_url": "https://www.youtube.com/results?search_query=Dip%20alle%20parallele%20esecuzione%20corretta%20tutorial"
+        "video_url": "https://www.youtube.com/shorts/YEdjByGD_A4"
       },
       {
         "nome": "French press",
         "descrizione": "Distesi, si piegano i gomiti portando il peso dietro la testa e si estende.",
         "tipo": "palestra",
-        "video_url": "https://www.youtube.com/results?search_query=French%20press%20esecuzione%20corretta%20tutorial"
+        "video_url": "https://www.youtube.com/shorts/DVuYVA7DCJk"
       },
       {
         "nome": "Push-down ai cavi",
         "descrizione": "In piedi, si spinge verso il basso la barra tenendo i gomiti fermi.",
         "tipo": "palestra",
-        "video_url": "https://www.youtube.com/results?search_query=Push-down%20ai%20cavi%20esecuzione%20corretta%20tutorial"
+        "video_url": "https://www.youtube.com/shorts/1FjkhpZsaxc"
       }
     ]
   },
@@ -233,19 +233,13 @@
         "nome": "Hip thrust",
         "descrizione": "Schiena su una panca, si spinge il bacino verso l'alto con un peso.",
         "tipo": "palestra",
-        "video_url": "https://www.youtube.com/results?search_query=Hip%20thrust%20esecuzione%20corretta%20tutorial"
+        "video_url": "https://www.youtube.com/shorts/7oZ_S73UdXU"
       },
       {
-        "nome": "Squat bulgaro",
-        "descrizione": "Con un piede su una panca dietro, si scende e si risale.",
+        "nome": "rdl",
+        "descrizione": "partendo in piedi e focalizzandosi sul movimento del bacino all'indietro.",
         "tipo": "palestra",
-        "video_url": "https://www.youtube.com/results?search_query=Squat%20bulgaro%20esecuzione%20corretta%20tutorial"
-      },
-      {
-        "nome": "Glute bridge",
-        "descrizione": "Distesi, si solleva il bacino spingendo coi talloni.",
-        "tipo": "calisthenics",
-        "video_url": "https://www.youtube.com/results?search_query=Glute%20bridge%20esecuzione%20corretta%20tutorial"
+        "video_url": "https://www.youtube.com/shorts/hu3jRvTc_po"
       }
     ]
   },
@@ -255,22 +249,16 @@
     "funzione": "Piegano il ginocchio ed estendono l'anca.",
     "esercizi": [
       {
-        "nome": "Stacco rumeno",
-        "descrizione": "Con gambe quasi tese, si porta il peso lungo le gambe piegando il busto.",
-        "tipo": "palestra",
-        "video_url": "https://www.youtube.com/results?search_query=Stacco%20rumeno%20esecuzione%20corretta%20tutorial"
-      },
-      {
         "nome": "Leg curl",
         "descrizione": "Alla macchina, si piegano le ginocchia portando i talloni verso i glutei.",
         "tipo": "palestra",
-        "video_url": "https://www.youtube.com/results?search_query=Leg%20curl%20esecuzione%20corretta%20tutorial"
+        "video_url": "https://www.youtube.com/shorts/_lgE0gPvbik"
       },
       {
         "nome": "Nordic curl",
         "descrizione": "In ginocchio con i piedi bloccati, si scende in avanti controllando il movimento.",
         "tipo": "calisthenics",
-        "video_url": "https://www.youtube.com/results?search_query=Nordic%20curl%20esecuzione%20corretta%20tutorial"
+        "video_url": "https://www.youtube.com/shorts/ogRu3ToXW6o"
       }
     ]
   },
@@ -283,19 +271,13 @@
         "nome": "Calf raise in piedi",
         "descrizione": "In piedi, ci si alza sulle punte e si scende lentamente.",
         "tipo": "palestra",
-        "video_url": "https://www.youtube.com/results?search_query=Calf%20raise%20in%20piedi%20esecuzione%20corretta%20tutorial"
-      },
-      {
-        "nome": "Calf raise da seduto",
-        "descrizione": "Seduti, con un peso sulle ginocchia, si alzano i talloni.",
-        "tipo": "palestra",
-        "video_url": "https://www.youtube.com/results?search_query=Calf%20raise%20da%20seduto%20esecuzione%20corretta%20tutorial"
+        "video_url": "https://www.youtube.com/shorts/_OewEscCsbo"
       },
       {
         "nome": "Salto con la corda",
         "descrizione": "Salti rapidi e leggeri sulle punte dei piedi.",
         "tipo": "calisthenics",
-        "video_url": "https://www.youtube.com/results?search_query=Salto%20con%20la%20corda%20esecuzione%20corretta%20tutorial"
+        "video_url": "https://www.youtube.com/shorts/r0eVhjgG0ks"
       }
     ]
   }
