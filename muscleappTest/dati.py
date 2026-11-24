@@ -5,9 +5,6 @@ Gli altri file NON aprono mai il JSON direttamente: chiedono a questo file.
 Le due funzioni che l'interfaccia puo' usare sono:
     get_gruppo(id)          ->  restituisce un GruppoMuscolare (o None)
     get_tutti_i_gruppi()    ->  restituisce la lista di tutti i gruppi
-
-Se un giorno passate da JSON a SQLite (database), cambiate SOLO questo file
-e il resto del programma non se ne accorge.
 """
 import json
 import os
