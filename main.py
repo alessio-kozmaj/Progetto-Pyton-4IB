@@ -55,9 +55,8 @@ def avvia_app():
         
         if vista == "fronte":
             canvas.create_image(0, 0, anchor="nw", image=img_fronte_tk)
-            
-            crea_zona([129, 156, 157, 164, 158, 209, 136, 218, 109, 189], "pettorali") 
-            crea_zona([193, 157, 217, 190, 198, 218, 169, 209, 169, 167], "pettorali") 
+            crea_zona([128, 157, 154, 163, 159, 188, 158, 208, 148, 214, 131, 218, 115, 203, 108, 189, 127, 159], "pettorali")
+            crea_zona([164, 209, 176, 215, 189, 218, 193, 218, 200, 211, 211, 199, 216, 189, 210, 174, 203, 163, 195, 155, 180, 155, 169, 160, 165, 167, 164, 187, 164, 198, 165, 206], "pettorali")
             crea_zona([85, 198, 102, 186, 122, 152, 104, 152, 90, 163, 85, 178, 85, 195], "spalle") 
             crea_zona([201, 154, 223, 186, 239, 198, 238, 179, 234, 166, 226, 155, 221, 152, 210, 150, 201, 153], "spalle") 
             crea_zona([87, 205, 79, 229, 84, 264, 99, 240, 106, 221, 104, 202, 102, 191, 88, 202], "bicipiti") 
@@ -99,6 +98,13 @@ def avvia_app():
                     break
             
             if muscolo_trovato:
+                canvas.delete("marker_selezione")      
+                x = event.x
+                y = event.y
+                
+                canvas.create_oval(x-10, y-10, x+10, y+10, outline="#ffffff", width=3, tags="marker_selezione")
+                canvas.create_oval(x-4, y-4, x+4, y+4, fill="#ffffff", outline="", tags="marker_selezione")
+
                 label_titolo.config(text=muscolo_trovato["nome"])
                 label_funzione.config(text=muscolo_trovato["funzione"])
                 
