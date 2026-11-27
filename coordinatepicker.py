@@ -8,7 +8,7 @@ def avvia_picker():
     canvas = tk.Canvas(finestra, width=300, height=650, bg="black")
     canvas.pack()
 
-    img = Image.open("immagini/fronte.png") #Seleziona l'immagine da esaminare
+    img = Image.open("immagini/retro.png") #Seleziona l'immagine da esaminare
     img = img.resize((300, 650), Image.Resampling.LANCZOS)
     img_tk = ImageTk.PhotoImage(img)
     canvas.create_image(0, 0, anchor="nw", image=img_tk)
@@ -30,7 +30,7 @@ def avvia_picker():
         coordinate = []
         for p in punti:
             coordinate.extend(p)
-        print("\n--- COPIA QUESTO NEL TUO MAIN.PY ---")
+        print("\nMettere nel main")
         print(f"crea_zona({coordinate}, \"nome_muscolo\")")
         finestra.destroy()
 

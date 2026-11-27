@@ -55,6 +55,7 @@ def avvia_app():
         
         if vista == "fronte":
             canvas.create_image(0, 0, anchor="nw", image=img_fronte_tk)
+            
             crea_zona([128, 157, 154, 163, 159, 188, 158, 208, 148, 214, 131, 218, 115, 203, 108, 189, 127, 159], "pettorali")
             crea_zona([164, 209, 176, 215, 189, 218, 193, 218, 200, 211, 211, 199, 216, 189, 210, 174, 203, 163, 195, 155, 180, 155, 169, 160, 165, 167, 164, 187, 164, 198, 165, 206], "pettorali")
             crea_zona([85, 198, 102, 186, 122, 152, 104, 152, 90, 163, 85, 178, 85, 195], "spalle") 
@@ -72,6 +73,26 @@ def avvia_app():
         else:
             canvas.create_image(0, 0, anchor="nw", image=img_retro_tk)
 
+            crea_zona([88, 148, 111, 161, 141, 230, 172, 164, 181, 156, 192, 148, 164, 134, 160, 101, 126, 100, 120, 128, 97, 146], "trapezio")
+            crea_zona([101, 161, 75, 189, 95, 249, 91, 295, 108, 288, 134, 297, 146, 299, 167, 288, 194, 297, 185, 259, 206, 194, 182, 163, 146, 234, 138, 233, 119, 200, 112, 172, 103, 162], "dorsali")
+            
+            crea_zona([210, 193, 205, 214, 215, 248, 234, 267, 238, 248, 232, 206, 215, 195], "tricipiti")
+            crea_zona([75, 193, 76, 234, 65, 257, 50, 264, 42, 243, 51, 203, 72, 195], "tricipiti")
+            
+            crea_zona([220, 260, 233, 267, 238, 252, 254, 275, 262, 332, 251, 337, 229, 296, 220, 264], "avambracci")
+            crea_zona([64, 260, 62, 288, 35, 337, 18, 333, 28, 273, 42, 249, 50, 258, 60, 259], "avambracci")
+            
+            crea_zona([90, 299, 104, 296, 111, 295, 125, 299, 137, 305, 138, 334, 140, 348, 136, 361, 119, 369, 105, 369, 86, 364, 79, 350, 81, 329, 85, 309, 90, 299], "glutei")
+            crea_zona([147, 307, 158, 298, 168, 295, 182, 297, 189, 302, 195, 311, 199, 334, 198, 354, 191, 360, 180, 367, 163, 368, 147, 361, 146, 354, 145, 332, 145, 315, 146, 308], "glutei")
+            
+            crea_zona([78, 358, 77, 386, 82, 419, 85, 431, 85, 449, 84, 459, 94, 454, 105, 456, 111, 465, 117, 437, 119, 427, 125, 411, 126, 385, 127, 369, 114, 370, 96, 372, 87, 367, 80, 360], "femorali")
+            crea_zona([152, 368, 167, 373, 181, 373, 192, 373, 201, 356, 203, 386, 203, 405, 196, 433, 195, 445, 197, 462, 180, 452, 175, 455, 173, 464, 164, 448, 163, 432, 156, 417, 150, 395, 150, 381, 151, 370], "femorali")
+            
+            crea_zona([87, 461, 96, 459, 106, 471, 115, 486, 114, 509, 108, 527, 103, 545, 103, 576, 104, 587, 92, 585, 87, 561, 81, 537, 77, 520, 75, 505, 80, 484, 86, 468], "polpacci")
+            crea_zona([172, 468, 179, 458, 192, 461, 200, 472, 203, 490, 206, 502, 203, 527, 197, 542, 194, 554, 190, 575, 191, 584, 182, 586, 179, 585, 177, 569, 175, 541, 170, 526, 165, 515, 165, 502, 168, 483, 170, 469], "polpacci")
+            
+            crea_zona([54, 196, 54, 184, 60, 169, 66, 158, 74, 151, 83, 150, 95, 157, 92, 164, 86, 176, 77, 187, 63, 192], "spalle")
+            crea_zona([186, 160, 201, 180, 218, 192, 233, 199, 227, 165, 211, 151, 200, 151, 184, 156], "spalle")
     def gira_vista():
         nonlocal vista_attuale
         if vista_attuale == "fronte":
@@ -98,10 +119,9 @@ def avvia_app():
                     break
             
             if muscolo_trovato:
-                canvas.delete("marker_selezione")      
+                canvas.delete("marker_selezione")
                 x = event.x
                 y = event.y
-                
                 canvas.create_oval(x-10, y-10, x+10, y+10, outline="#ffffff", width=3, tags="marker_selezione")
                 canvas.create_oval(x-4, y-4, x+4, y+4, fill="#ffffff", outline="", tags="marker_selezione")
 
@@ -116,7 +136,6 @@ def avvia_app():
                     riga.pack(fill="x", pady=5)
                     
                     tk.Label(riga, text=es["nome"], bg="#1e1e2e", fg="#ffb86c", font=tkfont.Font(size=16, weight="bold"), anchor="w").pack(fill="x")
-                    
                     tk.Label(riga, text=es["descrizione"], bg="#1e1e2e", fg="white", wraplength=600, justify="left", anchor="w", font=tkfont.Font(size=13)).pack(fill="x", pady=5)
                     
                     btn_video = tk.Button(riga, text="Guarda video", bg="#6272a4", fg="white", font=tkfont.Font(size=11, weight="bold"),
