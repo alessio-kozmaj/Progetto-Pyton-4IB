@@ -6,10 +6,11 @@ from PIL import Image, ImageTk
 def avvia_app():
     finestra = tk.Tk()
     finestra.title("Atlante muscolare e scheda di allenamento")
-    finestra.geometry("950x750")
+    finestra.geometry("1050x750") # Ho allargato la finestra totale per non stringere troppo il pannello destro
     finestra.configure(bg="#1e1e2e")
 
-    pannello_sinistro = tk.Frame(finestra, bg="#1e1e2e", width=350)
+    # --- PANNELLO SINISTRO (Larghezza 500) ---
+    pannello_sinistro = tk.Frame(finestra, bg="#1e1e2e", width=500)
     pannello_sinistro.pack(side="left", fill="y", padx=10, pady=10)
     pannello_sinistro.pack_propagate(False)
 
@@ -18,13 +19,14 @@ def avvia_app():
     canvas = tk.Canvas(pannello_sinistro, bg="#1e1e2e", highlightthickness=0)
     canvas.pack(fill="both", expand=True)
 
+    # --- PANNELLO DESTRO ---
     pannello_destro = tk.Frame(finestra, bg="#282a36")
     pannello_destro.pack(side="right", fill="both", expand=True, padx=10, pady=10)
 
     label_titolo = tk.Label(pannello_destro, text="Seleziona un muscolo", bg="#282a36", fg="white", font=("Arial", 20, "bold"))
     label_titolo.pack(pady=20)
     
-    label_funzione = tk.Label(pannello_destro, text="Passa il mouse sul corpo e clicca su un gruppo muscolare.", bg="#282a36", fg="#a6accd", wraplength=450, justify="left")
+    label_funzione = tk.Label(pannello_destro, text="Passa il mouse sul corpo e clicca su un gruppo muscolare.", bg="#282a36", fg="#a6accd", wraplength=400, justify="left")
     label_funzione.pack(pady=10)
 
     frame_esercizi = tk.Frame(pannello_destro, bg="#282a36")
@@ -39,53 +41,41 @@ def avvia_app():
         img = img.resize((larghezza, altezza), Image.Resampling.LANCZOS)
         return ImageTk.PhotoImage(img)
 
-    def hover_entra(event):
-        item_id = canvas.find_withtag("current")
-        if item_id:
-            canvas.itemconfig(item_id[0], outline="#ffb86c", width=3)
-
-    def hover_esce(event):
-        item_id = canvas.find_withtag("current")
-        if item_id:
-            canvas.itemconfig(item_id[0], outline="red", width=1)
-
     def crea_zona(coordinate, tag):
-        poly_id = canvas.create_polygon(coordinate, fill="", outline="red", width=1, tags=tag)
-        canvas.tag_bind(tag, "<Enter>", hover_entra)
-        canvas.tag_bind(tag, "<Leave>", hover_esce)
+        poly_id = canvas.create_polygon(coordinate, fill="", outline="", tags=tag)
         return poly_id
 
     def disegna_zone(vista):
         canvas.delete("all") 
         
         if vista == "fronte":
-            canvas.create_image(0, 0, anchor="nw", image=img_fronte_tk)
+            # Immagine centrata a X=100 (100 + 300 + 100 = 500)
+            canvas.create_image(100, 0, anchor="nw", image=img_fronte_tk)
             
-            # PETTORALI (coordinate tue, precise!)
-            crea_zona([129, 156, 157, 164, 158, 209, 136, 218, 109, 189], "pettorali") # Sinistro
-            crea_zona([193, 157, 217, 190, 198, 218, 169, 209, 169, 167], "pettorali") # Destro
+            # --- COORDINATE FRONTE (Spostate di +100 su X) ---
+            crea_zona([229, 156, 257, 164, 258, 209, 236, 218, 209, 189], "pettorali") # Sx
+            crea_zona([293, 157, 317, 190, 298, 218, 269, 209, 269, 167], "pettorali") # Dx
             
-            # Le altre zone sono ancora stimate (da sistemare con il picker)
-            crea_zona([120, 225, 180, 225, 170, 340, 130, 340], "addominali")
-            crea_zona([70, 140, 110, 150, 110, 190, 70, 180], "spalle")
-            crea_zona([190, 150, 230, 140, 230, 180, 190, 190], "spalle")
-            crea_zona([60, 180, 100, 190, 100, 280, 60, 270], "bicipiti")
-            crea_zona([200, 190, 240, 180, 240, 270, 200, 280], "bicipiti")
-            crea_zona([110, 390, 145, 390, 145, 530, 110, 530], "quadricipiti")
-            crea_zona([155, 390, 190, 390, 190, 530, 155, 530], "quadricipiti")
-            crea_zona([110, 540, 145, 540, 145, 630, 110, 630], "polpacci")
-            crea_zona([155, 540, 190, 540, 190, 630, 155, 630], "polpacci")
+            crea_zona([185, 198, 202, 186, 222, 152, 204, 152, 190, 163, 185, 178, 185, 195], "spalle") # Sx
+            crea_zona([301, 154, 323, 186, 339, 198, 338, 179, 334, 166, 326, 155, 321, 152, 310, 150, 301, 153], "spalle") # Dx
+            
+            crea_zona([187, 205, 179, 229, 184, 264, 199, 240, 206, 221, 204, 202, 202, 191, 188, 202], "bicipiti") # Sx
+            crea_zona([322, 192, 320, 214, 324, 232, 330, 249, 341, 264, 346, 250, 346, 235, 344, 220, 339, 208, 322, 192], "bicipiti") # Dx
+            
+            crea_zona([175, 252, 163, 277, 163, 305, 155, 332, 168, 337, 183, 304, 189, 288, 192, 263, 182, 270, 177, 253], "avambracci") # Sx
+            crea_zona([329, 262, 337, 288, 346, 308, 356, 333, 370, 332, 361, 308, 362, 281, 349, 253, 345, 275, 330, 262], "avambracci") # Dx
+            
+            crea_zona([208, 202, 220, 252, 218, 293, 244, 313, 262, 321, 281, 314, 306, 297, 303, 255, 313, 226, 314, 207, 299, 222, 288, 225, 265, 218, 236, 223, 209, 204], "addominali")
+            
+            crea_zona([214, 332, 207, 357, 205, 387, 208, 417, 216, 443, 229, 455, 239, 448, 249, 420, 255, 395, 256, 379, 255, 369, 222, 334], "quadricipiti") # Sx
+            crea_zona([272, 368, 295, 345, 310, 332, 320, 371, 318, 408, 310, 440, 298, 455, 287, 452, 280, 431, 269, 406, 269, 371], "quadricipiti") # Dx
+            
+            crea_zona([210, 472, 206, 500, 211, 532, 217, 578, 231, 580, 230, 555, 240, 521, 239, 479, 212, 474], "polpacci") # Sx
+            crea_zona([310, 473, 318, 503, 313, 543, 310, 583, 291, 583, 290, 542, 281, 522, 287, 477, 305, 474], "polpacci") # Dx
 
-        else: # retro
-            canvas.create_image(0, 0, anchor="nw", image=img_retro_tk)
-            crea_zona([80, 130, 220, 130, 190, 300, 110, 300], "dorsali")
-            crea_zona([110, 300, 190, 300, 180, 400, 120, 400], "glutei")
-            crea_zona([60, 170, 100, 170, 100, 280, 60, 270], "tricipiti")
-            crea_zona([200, 170, 240, 170, 240, 270, 200, 280], "tricipiti")
-            crea_zona([110, 410, 145, 410, 145, 530, 110, 530], "femorali")
-            crea_zona([155, 410, 190, 410, 190, 530, 155, 530], "femorali")
-            crea_zona([110, 540, 145, 540, 145, 630, 110, 630], "polpacci")
-            crea_zona([155, 540, 190, 540, 190, 630, 155, 630], "polpacci")
+        else:
+            canvas.create_image(100, 0, anchor="nw", image=img_retro_tk)
+            # Retro da fare
 
     def gira_vista():
         nonlocal vista_attuale
@@ -138,7 +128,7 @@ def avvia_app():
         img_retro_tk = carica_immagine("immagini/retro.png", 300, 650)
         disegna_zone("fronte")
     except Exception as e:
-        canvas.create_text(150, 200, text="Errore nel caricamento immagini!", fill="white", font=("Arial", 12))
+        canvas.create_text(250, 200, text="Errore nel caricamento immagini!", fill="white", font=("Arial", 12)) # Testo spostato a X=250 per centrarlo
         print("Errore dettagliato:", e)
 
     canvas.bind("<Button-1>", quando_clicchi)
